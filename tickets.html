@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-tickets.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+
+    
+    
+    <title>Hikkaduwa Hatchery Tickets</title>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <img src="Images/logo.png" class="logo" alt="">
+        <ul class="nav-links">
+            <li><a href="index.html"><b>Home</b></a></li>
+            <li><a href="TurtleCategories.html"><b>Categories</b></a></li>
+            <li><a href="HikkaduwaHatchery.html"><b>Hikkaduwa Hatchery</b></a></li>
+            <li><a href="OtherHatcheries.html"><b>Other Hatcheries</b></a></li>
+            <li><a href="Threats.html"><b>Threats</b></a></li>
+            <li><a id="srt" href="Donate.html"><b>Purchase and Donate</b></a></li>
+        </ul>
+
+    </nav>
+
+    <div class="dropdown-menu">
+        <ul>
+            <li><a href="index.html"><b>Home</b></a></li>
+            <li><a href="TurtleCategories.html"><b>Categories</b></a></li>
+            <li><a href="HikkaduwaHatchery.html"><b>Hikkaduwa Hatchery</b></a></li>
+            <li><a href="OtherHatcheries.html"><b>Other Hatcheries</b></a></li>
+            <li><a href="Threats.html"><b>Threats</b></a></li>
+            <li><a href="Donate.html"><b>Purchase and Donate</b></a></li>
+        </ul>
+    </div>
+    
+    <header>
+        <div class="header-content">
+           
+        </div>
+    </header>
+    <br>
+    <br>
+    <div class="content">
+        <br>
+        <br>
+        <div class="content-h">
+            <h2><b>Booking Tickets</b></h2>
+            <br>
+            <br>
+            <div class="datesNGuests">
+            <div class="bt-dates">
+                <h3 class="bt-main-sub"><b>Dates</b></h3>
+                <div class="bt-d-calendar">
+                    <label for="dateInput" id="dateB">Choose a date:</label>
+                    <br>
+                    <input type="date" id="dateInput" name="dateInput" min="2023-08-10">
+                </div>
+            </div>
+            <br>
+            
+            <div class="bt-guests">
+                <h3 class="bt-main-sub"><b>Guests</b></h3>
+                <br>
+                <div class="sl">
+                    <div class="guests">
+                        <div class="g-type">
+                            <label for="slAdult"><b>Sri Lankan Adult </b></label>
+                            <h6 class="bt-g-sub-p">Above 15 years</h6>
+                        </div>
+                        <div class="g-no">
+                            <input type="number" id="slAdult" name="slAdult" min="0" value="0">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="guests">
+                        <div class="g-type">
+                            <label for="slChild"><b>Sri Lankan Child </b></label>
+                            <h6 class="bt-g-sub-p">In between 5 to 4 years</h6>
+                        </div>
+                        <div class="g-no">
+                            <input type="number" id="slChild" name="slChild" min="0" value="0">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="f">                        
+                    <div class="guests">
+                        <div class="g-type">
+                            <label for="fAdult"><b>Foreign Adult </b></label>
+                            <h6 class="bt-g-sub-p">Above 15 years</h6>
+                        </div>
+                        <div class="g-no">
+                            <input type="number" id="fAdult" name="fAdult" min="0" value="0">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="guests">
+                        <div class="g-type">
+                            <label for="fChild"><b>Foreign Child </b></label>
+                            <h6 class="bt-g-sub-p">In between 5 to 14 years</h6>
+                        </div>
+                        <div class="g-no">
+                            <input type="number" id="fChild" name="fChild" min="0" value="0">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="infants">
+                    <div class="guests">
+                        <div class="g-type">
+                            <h4>Infants</h4>
+                            <h6 class="bt-g-sub-p">Below 4 years</h6>
+                        </div>
+                        <div class="g-no">                                
+                            <input type="number" id="infant" name="infant" min="0" value="0">
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+            </div>
+            
+            <br>
+            <div class="bt-duration">
+                <h3 class="bt-main-sub"><b>Duration</b></h3>
+                <br>
+                <p>Please keep in mind that the Hikkaduwa turtle hatchery will be open seven days a week from 7:00 a.m. to 6:00 p.m. The entire day has been broken into one-hour time blocks.</p>
+                <div class="bt-du-main">
+                    <div class="bt-du-timeslots">
+                        <br>
+                        <br>
+                        <div class="bt-du-ts">
+                            <label for="7am-8am" class="ts-checkbox">7:00AM - 8:00AM</label>
+                            <input type="checkbox" id="7am-8am" name="ts-b" value="7:00AM - 8:00AM" class="ts-cb">
+                        </div>
+                        <br>
+                        <div class="bt-du-ts">
+                            <label for="8am-9am" class="ts-checkbox">8:00AM - 9:00AM</label>
+                            <input type="checkbox" id="8am-9am" name="ts-b" value="8:00AM - 9:00AM" class="ts-cb">
+                        </div>
+                        <br>
+                        <div class="bt-du-ts">
+                            <label for="9am-10am" class="ts-checkbox">9:00AM - 10:00AM</label>
+                            <input type="checkbox" id="9am-10am" name="ts-b" value="9:00AM - 10:00AM" class="ts-cb">
+                        </div>
+                        <br>
+                        <div class="bt-du-ts">
+                            <label for="10am-11am" class="ts-checkbox">10:00AM - 11:00AM</label>
+                            <input type="checkbox" id="10am-11am" name="ts-b" value="10:00AM - 11:00AM" class="ts-cb">
+                        </div>
+                        <br>
+                        <div class="bt-du-ts">
+                            <label for="11am-12pm" class="ts-checkbox">11:00AM - 12:00PM</label>
+                            <input type="checkbox" id="11am-12pm" name="ts-b" value="11:00AM - 12:00PM" class="ts-cb">
+                        </div>
+                        <br>
+                        <div class="bt-du-ts">
+                            <label for="12pm-1pm" class="ts-checkbox">12:00PM - 1:00PM</label>
+                            <input type="checkbox" id="12pm-1pm" name="ts-b" value="12:00PM - 1:00PM" class="ts-cb">
+                        </div>
+                        <br>
+                        <div class="bt-du-ts">
+                            <label for="1pm-2pm" class="ts-checkbox">1:00PM - 2:00PM</label>
+                            <input type="checkbox" id="1pm-2pm" name="ts-b" value="1:00PM - 2:00PM" class="ts-cb">
+                        </div>
+                        <br>
+                        <div class="bt-du-ts">
+                            <label for="2pm-3pm" class="ts-checkbox">2:00PM - 3:00PM</label>
+                            <input type="checkbox" id="2pm-3pm" name="ts-b" value="2:00PM - 3:00PM" class="ts-cb">
+                        </div>
+                        <br>
+                        <div class="bt-du-ts">
+                            <label for="3pm-4pm" class="ts-checkbox">3:00PM - 4:00PM</label>
+                            <input type="checkbox" id="3pm-4pm" name="ts-b" value="3:00PM - 4:00PM" class="ts-cb">
+                        </div>
+                        <br>
+                        <div class="bt-du-ts">
+                            <label for="4pm-5pm" class="ts-checkbox">4:00PM - 5:00PM</label>
+                            <input type="checkbox" id="4pm-5pm" name="ts-b" value="4:00PM - 5:00PM" class="ts-cb">
+                        </div>
+                        <br>
+                        <div class="bt-du-ts">
+                            <label for="5pm-6pm" class="ts-checkbox">5:00PM - 6:00PM</label>
+                            <input type="checkbox" id="5pm-6pm" name="ts-b" value="5:00PM - 6:00PM" class="ts-cb">
+                        </div>
+                        <br>
+                        <br>
+                        <button class="submitButton" id="submitButton">Book Now</button>
+                        <p id="output"></p>
+                    </div>
+                    <div class="bt-du-notes">
+                        <div class="bookingCharges">
+                        <table>
+                            <tr>
+                                <th>Category</th>
+                                <th>Normal hour</th>
+                                <th>Peak Hour</th>
+                            </tr>
+                            <tr>
+                                <td>Foreigner Adult</td>
+                                <td>$10</td>
+                                <td>$13</td>
+                            </tr>
+                            <tr>
+                                <td>Foreigner Child</td>
+                                <td>$5</td>
+                                <td>$8</td>
+                            </tr>
+                            <tr>
+                                <td>Sri Lankan Adult</td>
+                                <td>$4</td>
+                                <td>$6</td>
+                            </tr>
+                            <tr>
+                                <td>Sri Lankan Child</td>
+                                <td>$2</td>
+                                <td>$3</td>
+                            </tr>
+                            <tr>
+                                <td>Infant</td>
+                                <td>$0</td>
+                                <td>$0</td>
+                            </tr>
+                        </table>
+                        <br>
+                        <br>
+                        <p>Please remember that Peak hours are from 10:00 am. to 1:00 pm and from 3:00 pm to 6:00 pm every day.</p>
+                        <br>
+                        <br>
+                        </div>
+                        <br>
+                        <div class="summary">
+                            <h3 class="bt-main-sub"><b>Summary</b></h3>
+                            <table>
+                                <tr>
+                                    <th>Date</th>
+                                    <td id="bookingDate"></td>
+                                </tr>
+                                <tr>
+                                    <th>TimeSlots</th>
+                                    <td id="bookingTimeSlots">7:00AM to 8:00AM</td>
+                                </tr>
+                                <tr>
+                                    <th>Duration</th>
+                                    <td id="bookingDuration">1hrs (01: Normal : 00 Peak)</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">Ticket Details</th>
+                                </tr>
+                                <tr>
+                                    <th>Category</th>
+                                    <th>Charges</th>
+                                </tr>
+                                <tr>
+                                    <td id="noAdultF-t">1 Foreigner Adults</td>
+                                    <td id="pAdultF-t">$10</td>
+                                </tr>
+                                <tr>
+                                    <td id="noChildF-t">0 Foreigner Children</td>
+                                    <td id="pChildF-t">-</td>
+                                </tr>
+                                <tr>
+                                    <td id="noAdultSL-t">0 Sri Lankan Adults</td>
+                                    <td id="pAdultSL-t">-</td>
+                                </tr>
+                                <tr>
+                                    <td id="noChildSL-t">0 Sri Lankan Children</td>
+                                    <td id="pChildSL-t">-</td>
+                                </tr>
+                                <tr>
+                                    <td id="noInfants-t">0 Infants</td>
+                                    <td id="pInfants-t">-</td>
+                                </tr>
+                                
+                                <tr>
+                                    <th>Total Payable</th>
+                                    <th id="totalPrice">$10</th>
+                                </tr>
+                            </table>
+                            <br>
+                            <br>
+                            <button type="submit" id="submitBtn" class="continueBtn">Countinue with Booking</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="tickets.js"></script>
+    <script>
+        const toggleBtn = document.querySelector('.menu-btn')
+        const toggleBtnIcon = document.querySelector('.menu-btn i')
+        const dropDownMenu = document.querySelector('.dropdown-menu')
+
+        toggleBtn.onclick = function(){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+</body>

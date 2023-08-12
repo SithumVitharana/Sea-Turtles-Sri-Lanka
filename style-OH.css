@@ -1,0 +1,395 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu{
+    position: absolute;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    float: left;
+}
+
+.dropdown-menu li{
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-menu li a{
+    color: black;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover{
+    color: gray;
+}
+
+.dropdown-menu.open{
+    height: 300px;
+}
+
+.navbar{
+    display: inline;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+
+
+@media screen and (max-width:751px) {
+
+    body{
+        font-family: sans-serif;
+        margin-bottom: 40px;
+
+    }
+
+    .logo{
+        float: right;
+        width: 60px;
+        height: 60px;
+        padding: 10px;
+    }
+
+    .menu-btn{
+        float: left;
+        font-size: 32px;
+        padding: 10px;
+    }
+
+    header{
+        width: 100%;
+        height: 200px;
+        background-image: url(Images/OtherHatcheries-main-img01.jpg);
+        background-position: bottom;
+        background-size: cover;
+    }
+
+    .content-OH{
+        border-radius: 50px;
+        padding: 20px;
+        background-color: rgba(131, 78, 35, 0.9);
+    }
+
+    .content{
+        margin: 4%;
+        padding: 3%;
+        font-size: 24px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+    .dropdown-menu.open{
+        height: 220px;
+    }
+
+    .OH-1{
+        padding: 10px;
+        background-color: rgba(215, 137, 69, 0.8);
+        border-radius: 15px;
+    }
+
+    .OH-imgs{
+        border-radius: 15px;
+        height: auto;
+        width: 100%;
+    }
+
+    .OH-lay2{
+        display: none;
+    }
+
+    .OHL a:active , a:visited , a:link{
+        color: black;
+    }
+    
+}
+
+@media screen and (min-width:751px) and (max-width:929px){
+
+    body{
+        font-family: sans-serif;
+        margin-bottom: 40px;
+        font-size: 30px;
+    }
+
+    .logo{
+        float: right;
+        width: 75px;
+        height: 75px;
+        padding: 15px;
+    }
+
+    .menu-btn{
+        float: left;
+        font-size: 40px;
+        padding: 15px;
+        
+    }
+
+    .dropdown-menu{
+        font-size: 28px;
+    }
+
+    header{
+        width: 100%;
+        height: 400px;
+        background-image: url(Images/OtherHatcheries-main-img01.jpg);
+        background-position: bottom;
+        background-size: cover;
+    }
+
+    .content-OH{
+        border-radius: 50px;
+        padding: 20px;
+        background-color: rgba(131, 78, 35, 0.9);
+    }
+
+    .content{
+        margin: 4%;
+        padding: 3%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+    .OH-lay1{
+        display: none;
+    }
+
+    .OH-2{
+        padding: 10px;
+        background-color: rgba(215, 137, 69, 0.8);
+        border-radius: 15px;
+    }
+
+    .OH-info{
+        padding: 10px;
+        display: flex;
+    }
+
+    .OH-imgs{
+        width: 400px;
+        height: auto;
+        border-radius: 25px;
+        border-right: 50px;
+    }
+
+    .OHL a:active , a:visited , a:link{
+        color: black;
+    }
+
+    .OH-p4{
+        padding-left: 50px;
+        font-size: 20px;
+    }
+
+}
+
+
+@media screen and (min-width:929px) and (max-width:1150px) {
+
+    body{
+        font-family: sans-serif;
+        margin-bottom: 40px;
+        font-size: 30px;
+    }
+
+    .logo{
+        float: right;
+        width: 75px;
+        height: 75px;
+        padding: 15px;
+    }
+
+    .menu-btn{
+        float: left;
+        font-size: 40px;
+        padding: 15px;
+        
+    }
+
+    .dropdown-menu{
+        font-size: 28px;
+    }
+
+    header{
+        width: 100%;
+        height: 400px;
+        background-image: url(Images/OtherHatcheries-main-img01.jpg);
+        background-position: bottom;
+        background-size: cover;
+    }
+
+    .content-OH{
+        border-radius: 50px;
+        padding: 20px;
+        background-color: rgba(131, 78, 35, 0.9);
+    }
+
+    .content{
+        margin: 4%;
+        padding: 3%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+    .OH-lay1{
+        display: none;
+    }
+
+    .OH-2{
+        padding: 10px;
+        background-color: rgba(215, 137, 69, 0.8);
+        border-radius: 15px;
+    }
+
+    .OH-info{
+        padding: 10px;
+        display: flex;
+    }
+
+    .OH-imgs{
+        width: 400px;
+        height: auto;
+        border-radius: 25px;
+        border-right: 50px;
+    }
+
+    .OHL a:active , a:visited , a:link{
+        color: black;
+    }
+
+    .OH-p4{
+        padding-left: 50px;
+    }
+    
+}
+
+
+@media screen and (min-width:1150px) {
+
+    .logo{
+        width: 60px;
+        height: 60px;
+        
+    }
+
+    .navbar{
+        display: flex;
+        position: absolute;
+        padding: 10px;
+        font-family: sans-serif;
+        background-color: rgba(110, 131, 135, 0.3);
+        width: 1498px;
+          
+    }
+    
+    .navbar .nav-links li a{
+        color:black;
+    }
+    
+    .navbar .nav-links li a:hover{
+        color: rgb(47,79,79);
+        opacity: 0.75;
+        font-style: italic;
+        font-weight: 600;
+    }
+    
+    
+    .nav-links{
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav-links li {
+        margin: 0 30px;
+        color: gray;
+    }
+
+    #srt{
+        background-color: rgba(119,136,153,0.6);
+        padding: 15px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    
+    header{
+        width: 100%;
+        height: 750px;
+        background-image: url(Images/OtherHatcheries-main-img01.jpg);
+        background-position: bottom;
+        background-size: cover;
+    }
+    
+    .content{
+        margin-left: 10%;
+        margin-right: 10%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 30px;
+    }
+    
+    .content-OH{
+        border-radius: 50px;
+        padding: 60px;
+        background-color:rgba(131, 78, 35, 0.9);
+    }
+    
+    .OH-imgs{
+        border-radius: 35px;
+        height: 300px;
+        width: 300px;
+        border-right: 5px;
+        padding: 10px;
+    }
+    
+    .OH-1{
+        display: flex;
+        padding: 10px;
+        background-color: rgba(215, 137, 69, 0.8);
+        border-radius: 15px;
+    }
+
+    .OH-lay2{
+        display: none;
+    }
+    
+    .OH-info{
+        padding: 10px;
+    }
+    
+    .OH-p1{
+        font-size: 24px;
+    }
+    
+    .OH-p2{
+        font-size: 18px;
+    }
+    
+    .OHL a:active , a:visited , a:link{
+        color: black;
+    }
+    
+}

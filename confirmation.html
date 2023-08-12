@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-confirmation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+
+    
+    
+    <title>Hikkaduwa Hatchery Tickets</title>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <img src="Images/logo.png" class="logo" alt="">
+        <ul class="nav-links">
+            <li><a href="index.html"><b>Home</b></a></li>
+            <li><a href="TurtleCategories.html"><b>Categories</b></a></li>
+            <li><a href="HikkaduwaHatchery.html"><b>Hikkaduwa Hatchery</b></a></li>
+            <li><a href="OtherHatcheries.html"><b>Other Hatcheries</b></a></li>
+            <li><a href="Threats.html"><b>Threats</b></a></li>
+            <li><a id="srt" href="Donate.html"><b>Purchase and Donate</b></a></li>
+        </ul>
+
+    </nav>
+
+    <div class="dropdown-menu">
+        <ul>
+            <li><a href="index.html"><b>Home</b></a></li>
+            <li><a href="TurtleCategories.html"><b>Categories</b></a></li>
+            <li><a href="HikkaduwaHatchery.html"><b>Hikkaduwa Hatchery</b></a></li>
+            <li><a href="OtherHatcheries.html"><b>Other Hatcheries</b></a></li>
+            <li><a href="Threats.html"><b>Threats</b></a></li>
+            <li><a href="Donate.html"><b>Purchase and Donate</b></a></li>
+        </ul>
+    </div>
+    
+    <header>
+        <div class="header-content">
+           
+        </div>
+    </header>
+    <br>
+    <br>
+    <div class="content">
+        <br>
+        <br>
+        <div class="content-h">
+            <h2><b>Booking Tickets</b></h2>
+            <br>
+            <br>
+            <div class="bt-summary">
+                <h3 class="bt-main-sub"><b>Booking Successfull...</b></h3>
+                <p>The following details should be copied or captured in a screenshot as a form of confirmation.</p>
+                <br>
+                <table>
+                    <tr>
+                        <td>Name </td>
+                        <td id="bookingName"> </td>
+                    </tr>
+                    <tr>
+                        <td>Date </td>
+                        <td id="bookingDate"> </td>
+                    </tr>
+                    <tr>
+                        <td>TimeSlots </td>
+                        <td id="bookingTimeSlots"> </td>
+                    </tr>
+                    <tr>
+                        <td>Duration </td>
+                        <td id="bookingDuration"> </td>
+                    </tr>
+                    <tr>
+                        <td>Contact No </td>
+                        <td id="bookingContactNo"> </td>
+                    </tr>
+                    <tr>
+                        <td>Email </td>
+                        <td id="bookingEmail"> </td>
+                    </tr>
+                    <tr>
+                        <td>Gender </td>
+                        <td id="bookingGender"> </td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Ticket Details</th>
+                    </tr>
+                    <tr>
+                        <th>Category</th>
+                        <th>Charges</th>
+                    </tr>
+                    <tr>
+                        <td id="noAdultF-t">1 Foreigner Adults</td>
+                        <td id="pAdultF-t">$10</td>
+                    </tr>
+                    <tr>
+                        <td id="noChildF-t">0 Foreigner Children</td>
+                        <td id="pChildF-t">-</td>
+                    </tr>
+                    <tr>
+                        <td id="noAdultSL-t">0 Sri Lankan Adults</td>
+                        <td id="pAdultSL-t">-</td>
+                    </tr>
+                    <tr>
+                        <td id="noChildSL-t">0 Sri Lankan Children</td>
+                        <td id="pChildSL-t">-</td>
+                    </tr>
+                    <tr>
+                        <td id="noInfants-t">0 Infants</td>
+                        <td id="pInfants-t">-</td>
+                    </tr>
+                    <tr>
+                        <th>Total Payable </th>
+                        <th id="bookingTotalPayable">$10</th>
+                    </tr>
+
+                </table>
+                <br>
+            </div>
+        </div>
+    </div>
+    <script src="confirmation.js"></script>
+    <script>
+        const toggleBtn = document.querySelector('.menu-btn')
+        const toggleBtnIcon = document.querySelector('.menu-btn i')
+        const dropDownMenu = document.querySelector('.dropdown-menu')
+
+        toggleBtn.onclick = function(){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>
